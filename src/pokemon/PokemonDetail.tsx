@@ -43,7 +43,7 @@ const PokemonDetail: React.FC<IPokemonDetail> = ({
       fetchPokemonInfo(url);
     } else {
       const empty = {
-        id: "olnoiknonm",
+        id: "",
         name: "",
         image: "",
         experience: 0,
