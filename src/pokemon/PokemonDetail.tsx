@@ -52,7 +52,7 @@ const PokemonDetail: React.FC<IPokemonDetail> = ({
         types: [],
         abilities: []
       };
-      setPokemon({...pokemon, ...empty});
+      setPokemon((prevState: IPokemonInfo) => ({...prevState, ...empty}));
     }
   },[url]);
 

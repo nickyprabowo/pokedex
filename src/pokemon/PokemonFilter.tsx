@@ -46,6 +46,7 @@ const PokemonFilter: React.FC<IPokemonFilter> = ({ handleTypeFilter }) => {
         options={pokemonTypes}
         placeholder='Filter by Type'
         onChange={handleTypeFilter}
+        loading={asyncState === "loading"}
       />   
     </>
   )

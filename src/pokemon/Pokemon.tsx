@@ -68,7 +68,7 @@ const PokemonList = () => {
   }, [isFetching, filter]);
 
   useEffect(() => {
-    if (pokemons.length > 0 && selectedPokemon.name === "" || pokemons.length > 0 && filter !== "") {
+    if ((pokemons.length > 0 && selectedPokemon.name === "") || (pokemons.length > 0 && filter !== "")) {
       setSelectedPokemon(pokemons[0]);
     } else {
       setSelectedPokemon({
