@@ -1,44 +1,32 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# POKEDEX APP
+this project consist of 4 main folders:
+    - app, contains the basic layout structure of the App
+    - pokemon, contains all the components, tests, types, and models for the view
+    - shared-components, contains common component which can be shared accross application
+    - utility, contains helpers and definitions of constant variable
+
+## Pokemon Folder
+    `Pokemon.tsx` would be the root component which hold most of the states and provides data for
+    another components. `Pokemon.tsx` is also responsible to fetch/filter list of pokemons from the API and display it as a list. It also utilize IntersectionObserver API to create infinite list of pokemons.
+
+    `PokemonFilter.tsx` is a filter component and do its own fetching for the list of pokemon types.
+
+    `PokemonDetail.tsx` responsible for displaying the image and detail informations about the pokemon selected from the list.
+
+    `Model` is a term I use to transform data from the API before using it. This layer of transformation would be beneficial for filtering unnecesary data or simplify the shape of data for later use.
+
+    `API` is where the data fetching happens
+
 ## Available Scripts
 
-In the project directory, you can run:
+1. Buka command-line lalu akses folder 'pokedex'
+2. Pertama-tama, ketik `yarn install` atau `npm install` untuk menginstall semua dependency aplikasi
+3. Kemudian, ketikkan `yarn start` atau `npm start`, lalu tekan enter untuk menjalankan aplikasi dalam mode development
+4. Jika ingin menjalankan mode production, ketikkan `yarn run build`. Kemudian diikuti dengan perintah `yarn global add serve` dan `serve -s build`
 
-### `yarn start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credit
+Pokeball Icon
+<div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
