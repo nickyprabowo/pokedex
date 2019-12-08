@@ -29,10 +29,10 @@ another components. `Pokemon.tsx` is also responsible to fetch/filter list of po
 
 ## Available Scripts
 
-1. Buka command-line lalu akses folder 'pokedex'
-2. Pertama-tama, ketik `yarn install` atau `npm install` untuk menginstall semua dependency aplikasi
-3. Kemudian, ketikkan `yarn start` atau `npm start`, lalu tekan enter untuk menjalankan aplikasi dalam mode development
-4. Jika ingin menjalankan mode production, ketikkan `yarn run build`. Kemudian diikuti dengan perintah `yarn global add serve` dan `serve -s build`
+1. Open up command-line and hit folder 'pokedex'
+2. First, type `yarn install` or `npm install` to install all the dependencies
+3. After that, type `yarn start` or `npm start`, hit tekan enter to run app in development mode
+4. If you want to run production mode, type `yarn run build`. Followed by these commands `yarn global add serve` and `serve -s build`
 
 
 ## Credit
