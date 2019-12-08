@@ -7,6 +7,8 @@ this project consist of 4 main folders:
     - shared-components, contains common component which can be shared accross application
     - utility, contains helpers and definitions of constant variable
 
+It has a list of pokemons on the left which will be an infinite scroll. The infinite scroll would only be active on type `All`.
+
 ## Pokemon Folder
 `Pokemon.tsx` would be the root component which hold most of the states and provides data for
 another components. `Pokemon.tsx` is also responsible to fetch/filter list of pokemons from the API and display it as a list. It also utilize IntersectionObserver API to create infinite list of pokemons.
