@@ -8,16 +8,16 @@ this project consist of 4 main folders:
     - utility, contains helpers and definitions of constant variable
 
 ## Pokemon Folder
-    `Pokemon.tsx` would be the root component which hold most of the states and provides data for
-    another components. `Pokemon.tsx` is also responsible to fetch/filter list of pokemons from the API and display it as a list. It also utilize IntersectionObserver API to create infinite list of pokemons.
+`Pokemon.tsx` would be the root component which hold most of the states and provides data for
+another components. `Pokemon.tsx` is also responsible to fetch/filter list of pokemons from the API and display it as a list. It also utilize IntersectionObserver API to create infinite list of pokemons.
 
-    `PokemonFilter.tsx` is a filter component and do its own fetching for the list of pokemon types.
+`PokemonFilter.tsx` is a filter component and do its own fetching for the list of pokemon types.
 
-    `PokemonDetail.tsx` responsible for displaying the image and detail informations about the pokemon selected from the list.
+`PokemonDetail.tsx` responsible for displaying the image and detail informations about the pokemon selected from the list.
 
-    `Model` is a term I use to transform data from the API before using it. This layer of transformation would be beneficial for filtering unnecesary data or simplify the shape of data for later use.
+`Model` is a term I use to transform data from the API before using it. This layer of transformation would be beneficial for filtering unnecesary data or simplify the shape of data for later use.
 
-    `API` is where the data fetching happens
+`API` is where the data fetching happens
 
 ## Available Scripts
 
